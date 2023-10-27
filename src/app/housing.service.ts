@@ -113,11 +113,18 @@ export class HousingService {
 
   constructor() { }
 
+  //get all the houses
   getAllHousingLocations(): HousingLocation[] {
     return this.housingLocationList;
   }
   
+  //get house by id
   getHousingLocationById(id: number): HousingLocation | undefined {
     return this.housingLocationList.find(housingLocation => housingLocation.id === id);
+  }
+
+  //home application reservation
+  submitApplication(firstName: string, lastName: string, email: string) {
+    console.log(`Homes application received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`);
   }
 }
