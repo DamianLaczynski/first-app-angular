@@ -1,5 +1,7 @@
 # FirstApp
 
+To use app with data use firstly json server. Write this command in terminal `json-server --watch db.json`
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
 
 ## Development server
